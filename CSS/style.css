@@ -1,0 +1,383 @@
+body{
+    background: #e3e9f7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+img{
+    width: 20px;
+}
+header{
+    width: 80%;
+    height: 70px;
+    background: #fefefe;
+    display: flex;
+    /* seting tulisan terletak di tengah tengah */
+    align-items: center;
+    justify-content: space-between; /*membuat tulisan mental ke kanan dan kiri*/
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    right: 5%;
+    left: 5%;
+    top: 0;
+}
+.logo{
+    width: 150px;
+    margin-top: 7px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 10px;
+}
+nav .logo{
+    /* menghilangkan logo */
+    display: none;
+}
+nav ul li a{
+    color: #212526;
+    list-style-type: none;
+    margin: 0 2px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 8px 18px
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li a:hover{
+    background: #f6f4ff;
+    transition: 0.5s;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+nav ul li a.active{
+    transition: 1s;
+    background: #675cff;
+    color: #fff;
+    border-radius: 5px;
+}
+nav ul li a:active{
+    opacity: 0;
+    transition: 0.5;
+    background: #675cff;
+    color: #fff;
+    border-radius: 5px;
+}
+.hamburger{
+    display: none;
+    height: fit-content;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+.hamburger:hover{
+    background: #f6f4ff;
+}
+.hamburger div{
+    width: 20px;
+    height: 2px;
+    margin: 6px 0 ;
+    background-color: #212526;
+}
+.konten{
+    width: 100%;
+    background: #fefefe;
+    margin: 10px 0;
+    border-radius: 0 0 10px 10px;
+    position: relative;
+    z-index: -100;
+    padding: 10px 0;
+    
+    
+}
+.konten .isi{
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+}
+.konten h3{
+    text-align: center;
+}
+.konten:first-child{
+    background: #e3e9f7;
+    height: 50px;
+    
+}
+.konten:last-child{
+    background: #e3e9f7;
+    height: 80px;
+}
+.isi .welcome{
+    display: flex;
+    justify-content:left;
+}
+.welcome{
+    font-family: 'Ysabeau', sans-serif;
+}
+.perent{
+    margin: 10px;
+}
+button {
+    background-color: #fff;
+    border: 1px solid #25D366;
+    padding: 5px;
+    position: relative;
+    width: 6.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+    margin-top: -8px;
+}
+
+button p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.7em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #25D366;
+}
+
+button svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+}
+
+button:hover p {
+    left: 0.5em;
+    color: #fff
+}
+
+button:hover svg {
+    opacity: 1;
+}
+
+button:hover {
+    background-color: #25D366;
+}
+
+.card{
+    
+    background: #fefefe;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    height: 100px;
+    border: 1px solid rgb(181, 181, 181);
+    cursor: pointer;
+    
+}
+
+
+
+.card .gambar{
+    transition: 0.5s;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 5px;
+    
+    
+}
+.card:hover{
+    transition: 0.5s;
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+}
+.card:hover .gambar{
+    padding: 20px 30px;
+    width: 50px;
+    height: 50px;
+}
+.card:hover p{
+    padding-right: 20px;
+    opacity: 1;
+    
+}
+.card p{
+    opacity: 0;
+    padding: 20px 10px;
+    transition: 0.5s;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    z-index: -3;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.item {
+    background-color: blue;
+    color: white;
+    display: flex;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+.item img{
+    transition: 0.5s;
+    width: 60px;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 45px;
+    opacity: 1;
+    padding-right: 5px;
+}
+
+
+.item:hover img{
+    background-color: red;
+    padding: 20px 10px;
+    width: 50px;
+    height: 50px;
+    transition: 1s;
+    opacity: 0;
+    
+}
+.background-image{
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?w=996&t=st=1684498977~exp=1684499577~hmac=b169067e20da01ac7ef142a1d0b0bb15ba5c4b16cfc7e01a0d9c9edb3403a174");
+    
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    border-radius: 0 0 10px 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* .background-image h1, */
+.background-image .isi {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.besar{
+    height: 150px;
+}
+.profile {
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?w=996&t=st=1684498977~exp=1684499577~hmac=b169067e20da01ac7ef142a1d0b0bb15ba5c4b16cfc7e01a0d9c9edb3403a174");
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0 30%;
+    text-align: center;
+    padding: 20px;
+    
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+  }  
+  .profile img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+  .profile img:hover {
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+  
+  .profile h1 {
+    margin: 0;
+    
+  }
+  
+  .profile p {
+    margin: 5px 0;
+  }
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #fefefe;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.62) 0px 0px 20px 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 700px){
+    header{
+        padding: 0 20px;
+    }
+    #nav_check:checked ~ nav{
+        left: -30px;
+    }
+    nav{
+        position: absolute;
+        left: -300px;
+        top: 0;
+        width: 150px;
+        height: 100vh;
+        background: #fefefe;
+        transition: 0.2s;
+        box-shadow: 20px 0 20px 0 rgba(0,0,0,0.2);
+    }
+    .profile{
+        margin: auto;
+    }
+    nav .logo{
+        display: block;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        margin-left: 30px;
+    }
+    nav ul li{
+        margin-bottom: 5px;
+        padding: 10px 15px;
+        
+    }
+    button{
+        margin-top: 200px;
+    }
+    
+    nav ul{
+        display: block;
+        padding: 0 20px;
+        margin-top: 50px;
+    }
+    .hamburger{
+        display: block;
+    }
+    
+    
+    
+}
+@media (max-width: 768px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+}
+
+@media (max-width: 425px) {
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .card:hover .gambar{
+    padding-right: 20px;
+    }
+}
