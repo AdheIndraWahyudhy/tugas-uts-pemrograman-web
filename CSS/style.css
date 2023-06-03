@@ -294,11 +294,12 @@ button:hover {
   
   .profile h1 {
     margin: 0;
-    
+    text-shadow: 2px 2px 5px white;
   }
   
   .profile p {
     margin: 5px 0;
+    text-shadow: 2px 2px 5px white;
   }
 
 footer{
