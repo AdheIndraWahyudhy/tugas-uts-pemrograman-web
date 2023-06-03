@@ -372,10 +372,9 @@ footer{
 
 @media (max-width: 425px) {
     .container{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        margin-left: 0;
-        margin-right: 0;
+        display: block;
+        margin: 0 10px;
+        
     }
     .card:hover .gambar{
     padding-right: 20px;
