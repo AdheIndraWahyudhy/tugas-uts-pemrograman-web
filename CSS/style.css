@@ -377,6 +377,11 @@ footer{
         margin: 0 10px;
         
     }
+    .card{
+    
+    margin: 10px;
+    
+}
     
     .card:hover .gambar{
     padding-right: 20px;
