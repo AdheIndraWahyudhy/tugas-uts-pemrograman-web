@@ -376,6 +376,16 @@ footer{
         margin: 0 10px;
         
     }
+    .profile {
+    background-image: url("https://img.freepik.com/free-vector/hand-drawn-flat-design-mountain-landscape_23-2149158786.jpg?w=996&t=st=1684498977~exp=1684499577~hmac=b169067e20da01ac7ef142a1d0b0bb15ba5c4b16cfc7e01a0d9c9edb3403a174");
+    background-size: cover;
+    border-radius: 5px;
+    margin: 0 30%;
+    text-align: center;
+    padding: 20px;
+    
+    box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2);
+  }  
     .card:hover .gambar{
     padding-right: 20px;
     }
